@@ -1,0 +1,28 @@
+.App button{
+    margin: 20px 0;
+}
+
+.App ul{
+    list-style: none;
+    font-weight: 500;
+    padding: 0 5px;
+    margin: 15px 5px;
+    border: 2px solid black;
+    width: 20%;
+}
+
+.vinyls-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.vinyls-list span{
+    color: red;
+    font-weight: 700;
+}
+
+.vinyls-list li{
+    margin: 5px 0;
+}
