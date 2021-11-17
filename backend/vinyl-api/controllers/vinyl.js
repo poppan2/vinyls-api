@@ -4,9 +4,8 @@ const Vinyl = require("../models/vinyl");
 
 router.post("/", (req, res) => {
   Vinyl.create(req.body)
-    .status(201)
     .then((vinyl) => {
-      res.json(vinyl);
+      res.status(201).json(vinyl);
     });
 });
 
@@ -21,9 +20,8 @@ router.get("/", (req, res) => {
 
 router.put("/:id", (req, res) => {
   Vinyl.findByIdAndUpdate(req.params.id, req.body, { new: true })
-    .status(200)
     .then((vinyl) => {
-      res.json(vinyl);
+      res.status(200).json(vinyl);
     });
 });
 
